@@ -18,6 +18,19 @@ export default {
 			}
 		},
 		extend: {
+      colors: {
+        gold: {
+          50: '#FFF9E5',
+          100: '#FFF4CC',
+          200: '#FFE999',
+          300: '#FFDD66',
+          400: '#FFD233',
+          500: '#FFC700',
+          600: '#CCA000',
+          700: '#997800',
+          800: '#665000',
+          900: '#332800',
+        },
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',

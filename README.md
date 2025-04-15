@@ -1,73 +1,72 @@
-# Welcome to your Lovable project
 
-## Project info
+# Aurum.Gold ($AUR) - Custom Blockchain Implementation
 
-**URL**: https://lovable.dev/projects/10945072-0afb-42fc-be27-5099ed038c8d
+Aurum.Gold is a custom blockchain implementation with a native cryptocurrency ($AUR), featuring a hybrid Proof of Work (PoW) and Proof of Stake (PoS) consensus mechanism.
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- **Custom Blockchain Protocol**: Hybrid consensus mechanism that starts with PoW and can transition to PoS
+- **Native $AUR Cryptocurrency**: Built-in token for transactions within the network
+- **Wallet Functionality**: Create wallets, manage keys, and execute transactions
+- **Node Setup and Syncing**: Network synchronization between nodes
+- **Block Explorer**: Visualize blockchain data and transactions
+- **Dashboard**: Monitor the blockchain and wallet status
 
-**Use Lovable**
+## Technical Details
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/10945072-0afb-42fc-be27-5099ed038c8d) and start prompting.
+### Blockchain Core
 
-Changes made via Lovable will be committed automatically to this repo.
+The blockchain implements a standard chain of blocks, each containing:
+- Block header (index, timestamp, previous hash, etc.)
+- Transaction data
+- Mining information
 
-**Use your preferred IDE**
+### Consensus Mechanism
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Initial Phase**: Proof of Work (PoW) with adaptive difficulty
+- **Later Phase**: Ability to transition to Proof of Stake (PoS) when network matures
+- **Hybrid Mode**: Combined PoW/PoS for enhanced security and efficiency
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Wallet System
 
-Follow these steps:
+- Secure key pair generation
+- Transaction signing and verification
+- Balance management
+- Transaction history
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Network Layer
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- Node-to-node communication
+- Block and transaction propagation
+- Network synchronization
 
-# Step 3: Install the necessary dependencies.
-npm i
+## Getting Started
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+1. Clone the repository
+2. Install dependencies with `npm install`
+3. Start the development server with `npm run dev`
+4. Open your browser to `http://localhost:8080`
 
-**Edit a file directly in GitHub**
+## Development Roadmap
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Phase 1 (Current)
+- Core blockchain implementation
+- Basic wallet functionality
+- Local node simulation
+- Explorer/Dashboard UI
 
-**Use GitHub Codespaces**
+### Phase 2 (Planned)
+- Smart contract integration
+- Enhanced PoS implementation
+- Improved network synchronization
+- Mobile wallet application
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Phase 3 (Future)
+- Governance mechanism
+- Cross-chain compatibility
+- Advanced privacy features
+- Decentralized applications platform
 
-## What technologies are used for this project?
+## License
 
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/10945072-0afb-42fc-be27-5099ed038c8d) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+This project is licensed under the MIT License - see the LICENSE file for details.
